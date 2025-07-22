@@ -1,0 +1,45 @@
+# loads scripting action for window opacity and window shadows
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# bsp, stack, or float
+yabai -m config layout bsp
+
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 0
+yabai -m config bottom_padding 0
+yabai -m config left_padding 0
+yabai -m config right_padding 0
+yabai -m config window_gap 0
+
+# mouse settings
+yabai -m config mouse_follows_focus off
+
+yabai -m config mouse_modifier alt
+# left click + drag
+yabai -m config mouse_action1 move
+# right click + drag
+yabai -m config mouse_action2 resize
+
+yabai -m mouse_drop_action swap
+
+# disable specific apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner Elements$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Pro Tools$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+
+yabai -m config debug_output on
+
+yabai -m config window_shadow float
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
+
+
+#bootstrap with borders
+borders active_color=0xffFFFFFF inactive_color=0xff494d64 width=2.0 &
