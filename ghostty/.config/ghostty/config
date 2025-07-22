@@ -42,10 +42,13 @@ custom-shader = shaders/cursor_smear.glsl
 
 # general settings
 font-family = "Lilex Nerd Font Mono"
+# font-thicken = true
+# font-thicken-strength = 0
 font-size = 14
 theme = catppuccin-macchiato
-background-opacity=0.95
+background-opacity=0.9
 background-blur = true
+selection-invert-fg-bg = true
 # shell-integration-features = no-cursor
 # cursor-style = block
 # cursor-style-blink = true
@@ -53,6 +56,7 @@ confirm-close-surface = false
 title = " "
 macos-titlebar-proxy-icon = hidden
 quit-after-last-window-closed = false
+macos-window-shadow = false
 
 # keybinds
 keybind = global:cmd+grave_accent=toggle_quick_terminal
