@@ -50,7 +50,7 @@ style = "powerline"
 powerline_symbol = ""
 foreground = "transparent"
 background = "p:green"
-template = "{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
+template = " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
 [blocks.segments.properties]
 display_default = true
 fetch_virtual_env = true
