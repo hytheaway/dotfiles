@@ -2,6 +2,17 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
+# disable specific apps
+yabai -m rule --add app="^System Settings$" manage=off sub-layer=below
+yabai -m rule --add app="^Calculator$" manage=off sub-layer=below
+yabai -m rule --add app="^Karabiner Elements$" manage=off sub-layer=below
+yabai -m rule --add app="^Messages$" manage=off sub-layer=below
+yabai -m rule --add app="^Pro Tools$" manage=off sub-layer=below
+yabai -m rule --add app="^Raycast$" manage=off sub-layer=below
+yabai -m rule --add app="^Zoom Workplace$" manage=off sub-layer=below
+yabai -m rule --add app="^zoom.us$" manage=off sub-layer=below
+yabai -m rule --add app="^Max$" manage=off sub-layer=below
+
 # bsp, stack, or float
 yabai -m config layout bsp
 
@@ -25,13 +36,8 @@ yabai -m config mouse_action2 resize
 
 yabai -m mouse_drop_action swap
 
-# disable specific apps
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Karabiner Elements$" manage=off
-yabai -m rule --add app="^Messages$" manage=off
-yabai -m rule --add app="^Pro Tools$" manage=off
-yabai -m rule --add app="^Raycast$" manage=off
+
+
 
 yabai -m config debug_output on
 
