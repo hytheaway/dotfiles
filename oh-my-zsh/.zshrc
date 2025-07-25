@@ -112,5 +112,9 @@ fi
 FZF_ALT_C_COMMAND=
 source <(fzf --zsh)
 
+# using homebrew python3
+export PATH=$PATH:/opt/homebrew/bin/python3
+export PATH=/opt/homebrew/bin:$PATH
+
 # Created by `pipx` on 2025-07-16 20:27:18
 export PATH="$PATH:/Users/garrett/.local/bin"
