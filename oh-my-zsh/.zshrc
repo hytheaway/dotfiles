@@ -118,3 +118,10 @@ export PATH=/opt/homebrew/bin:$PATH
 
 # Created by `pipx` on 2025-07-16 20:27:18
 export PATH="$PATH:/Users/garrett/.local/bin"
+
+# php 7.0 for laravel 5.3
+export PATH="/opt/homebrew/opt/php@7.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.0/sbin:$PATH"
+
+# laravel 5.3
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
