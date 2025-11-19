@@ -125,3 +125,6 @@ export PATH="/opt/homebrew/opt/php@7.0/sbin:$PATH"
 
 # laravel 5.3
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# mysql version 8.4
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
