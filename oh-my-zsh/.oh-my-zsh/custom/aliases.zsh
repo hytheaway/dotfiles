@@ -16,5 +16,4 @@ alias ghosttyconfig='nvim ~/.config/ghostty/config'
 # changing directories
 alias repos='cd ~/dev/GitHub_Local/Repositories'
 alias ohmyzsh="cd ~/.oh-my-zsh"
-alias website='cd ~/Dropbox/GitHub-Website/hytheaway.github.io/'
 alias dotfiles='cd ~/.dotfiles/'
