@@ -60,6 +60,9 @@ macos-window-shadow = false
 copy-on-select = false
 auto-update = download
 auto-update-channel = stable
+cursor-click-to-move = true
+macos-dock-drop-behavior = window
+bold-color = #59C9A5
 
 # keybinds
 keybind = global:cmd+grave_accent=toggle_quick_terminal
