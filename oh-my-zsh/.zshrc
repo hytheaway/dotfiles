@@ -128,3 +128,6 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # mysql version 8.4
 export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
