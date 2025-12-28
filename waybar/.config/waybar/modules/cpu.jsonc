@@ -1,0 +1,27 @@
+{
+  "cpu": {
+    "interval": 10,
+    "format": "󰍛 {usage}%",
+    "format-warning": "󰀨 {usage}%",
+    "format-critical": "󰀨 {usage}%",
+    // "format-icons":
+    "min-length": 7,
+    "max-length": 7,
+    // "align":
+    // "justify":
+    // "rotate":
+    "states": {
+      "warning": 75,
+      "critical": 90,
+    },
+    "on-click": "hyprctl dispatch exec '[float; size 1000 600; move 500 35] ghostty -e ~/.config/waybar/scripts/btop.sh'",
+    // "on-click-middle":
+    // "on-click-right":
+    // "on-update":
+    // "on-scroll-up":
+    // "on-scroll-down":
+    // "smooth-scrolling-threshold":
+    "tooltip": false,
+    // "expand":
+  },
+}
