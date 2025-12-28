@@ -1,4 +1,4 @@
 .DS_Store
 raycast
 session
-git/.gitconfig
+git/.config/git/gitk
