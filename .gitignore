@@ -4,3 +4,4 @@ session
 git/.config/git/gitk
 trashrc
 go/.config/go/telemetry
+mozilla/.config/mozilla/firefox/*
