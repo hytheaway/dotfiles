@@ -1,0 +1,16 @@
+[user]
+	email = 91982175+hytheaway@users.noreply.github.com
+	name = hytheaway
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	last = log -1 HEAD
+	co = checkout
+	visual = !gitk
+	unstage = reset HEAD --
